@@ -8,36 +8,45 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="foundation-sites/foundation.min.css" media="screen">
+
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-      </ul>
-    </nav>
 
+    <div class="medium-2 columns" data-sticky-container>
+
+<nav class="sticky" data-sticky data-top-anchor="home:bottom" data-btm-anchor="about:bottom">
+  <ul class="horizontal medium-vertical menu" data-magellan>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About Me</a></li>
+  </ul>
+</nav>
+
+    </div>
+
+    <div class="medium-10 columns">
     <header class="page-header">
 
-<h1 class="project-name">Kelvin Lu</h1>
+<h1 class="project-name" id="home" data-magellan-target="home">Kelvin Lu</h1>
 <h2 class="project-tagline">Full Stack Web Developer</h2>
 
     </header>
 
     <section class="main-content">
 
-<h3>Projects</h3>
+<h3 id="projects" data-magellan-target="projects">Projects</h3>
 <ul>
   <li>DevFinders</li>
-  <img src="img/devFindersHome.png" alt="DevFinder">
+  <img src="img/devFindersHome.png" alt="DevFinders">
   <li>Jimmy Co.</li>
   <li>Super Bowser</li>
+  <img src="img/superBowserHome.png" alt="Super Bowser">
   <li>Lettuce Eat</li>
   <img src="img/lettuceEatHome.png" alt="Lettuce Eat">
 </ul>
 
-<h3>About Me</h3>
+<h3 id="about" data-magellan-target="about">About Me</h3>
 <img src="img/kelvin.jpg" alt="Kelvin Lu">
 <p>Aspiring software engineer based in Silicon Valley. Recent graduate of Coding Dojo. Looking for opportunities to use newly learned skills to create awesome web applications. Likes coming up with elegant solutions and writing great code.</p>
 <ul>
@@ -47,7 +56,13 @@
 </ul>
 
     </section>
-
+    </div>
   
+
+  <script type="text/javascript" src="foundation-sites/jquery.min.js"></script>
+  <script type="text/javascript" src="foundation-sites/foundation.min.js"></script>
+  <script type="text/javascript">
+    $(document).foundation();
+  </script>
   </body>
 </html>
