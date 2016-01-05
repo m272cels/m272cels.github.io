@@ -11,11 +11,12 @@
     <link rel="stylesheet" type="text/css" href="foundation-sites/foundation.min.css" media="screen">
 
   </head>
-  <body>
+  <body ng-app="portfolio">
+ 
 
     <div class="medium-2 columns" data-sticky-container>
 
-<nav class="sticky" data-sticky data-top-anchor="home:bottom" data-btm-anchor="about:bottom">
+<nav class="sticky" data-sticky data-top-anchor="home:top" data-btm-anchor="about:top">
   <ul class="horizontal medium-vertical menu" data-magellan>
     <li><a href="#home">Home</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -25,40 +26,12 @@
 
     </div>
 
-    <div class="medium-10 columns">
-    <header class="page-header">
-
-<h1 class="project-name" id="home" data-magellan-target="home">Kelvin Lu</h1>
-<h2 class="project-tagline">Full Stack Web Developer</h2>
-
-    </header>
-
-    <section class="main-content">
-
-<h3 id="projects" data-magellan-target="projects">Projects</h3>
-<ul>
-  <li>DevFinders</li>
-  <img src="img/devFindersHome.png" alt="DevFinders">
-  <li>Jimmy Co.</li>
-  <li>Super Bowser</li>
-  <img src="img/superBowserHome.png" alt="Super Bowser">
-  <li>Lettuce Eat</li>
-  <img src="img/lettuceEatHome.png" alt="Lettuce Eat">
-</ul>
-
-<h3 id="about" data-magellan-target="about">About Me</h3>
-<img src="img/kelvin.jpg" alt="Kelvin Lu">
-<p>Aspiring software engineer based in Silicon Valley. Recent graduate of Coding Dojo. Looking for opportunities to use newly learned skills to create awesome web applications. Likes coming up with elegant solutions and writing great code.</p>
-<ul>
-  <li><a href="mailto:kelvin.lu.sj@gmail.com">Email</a></li>
-  <li><a href="https://www.linkedin.com/in/kelvinlusj">LinkedIn</a></li>
-  <li><a href="https://github.com/m272cels">GitHub</a></li>
-</ul>
-
-    </section>
-    </div>
+    <div ng-view="" class="medium-10 columns"></div>
   
-
+  <script type="text/javascript" src="angular/lib/angular.js"></script>
+  <script type="text/javascript" src="angular/lib/angular-route.js"></script>
+  <script type="text/javascript" src="angular/app.js"></script>
+  <script type="text/javascript" src="angular/controllers/projectsController.js"></script>
   <script type="text/javascript" src="foundation-sites/jquery.min.js"></script>
   <script type="text/javascript" src="foundation-sites/foundation.min.js"></script>
   <script type="text/javascript">
