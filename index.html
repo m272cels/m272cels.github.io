@@ -3,20 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <title>Kelvin Lu</title>
+    <!-- CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="foundation-sites/foundation.min.css" media="screen">
-
+    <!-- ANGULAR -->
+    <script type="text/javascript" src="angular/lib/angular.js"></script>
+    <script type="text/javascript" src="angular/lib/angular-route.js"></script>
+    <script type="text/javascript" src="angular/app.js"></script>
+    <script type="text/javascript" src="angular/controllers/projectsController.js"></script>
+    <script type="text/javascript" src="foundation-sites/jquery.min.js"></script>
+    <script type="text/javascript" src="foundation-sites/foundation.min.js"></script>
+    
   </head>
   <body ng-app="portfolio">
- 
 
     <div class="medium-2 columns" data-sticky-container>
 
-<nav class="sticky" data-sticky data-top-anchor="home:top" data-btm-anchor="about:top">
+<nav data-sticky>
   <ul class="horizontal medium-vertical menu" data-magellan>
     <li><a href="#home">Home</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -26,16 +33,10 @@
 
     </div>
 
-    <div ng-view="" class="medium-10 columns"></div>
-  
-  <script type="text/javascript" src="angular/lib/angular.js"></script>
-  <script type="text/javascript" src="angular/lib/angular-route.js"></script>
-  <script type="text/javascript" src="angular/app.js"></script>
-  <script type="text/javascript" src="angular/controllers/projectsController.js"></script>
-  <script type="text/javascript" src="foundation-sites/jquery.min.js"></script>
-  <script type="text/javascript" src="foundation-sites/foundation.min.js"></script>
-  <script type="text/javascript">
-    $(document).foundation();
-  </script>
+    <div ng-view="" class="medium-10 columns" id="main"></div>
+
+    <script type="text/javascript">
+      $(document).foundation();
+    </script>
   </body>
 </html>
