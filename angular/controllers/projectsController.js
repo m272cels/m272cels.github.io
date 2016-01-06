@@ -1,3 +1,3 @@
-portfolio.controller('projectsController', function ($scope) {
-
-})
+portfolio.controller('projectsController', ['$scope', '$routeParams', function ($scope, $routeParams) {
+  console.log($routeParams);
+}])
