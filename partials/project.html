@@ -1,15 +1,17 @@
   <section class="main-content">
     
-<h3>DevFinders</h3>
-<img src="img/devFindersHome.png">
-<p>Social networking website for connecting developers and potential clients. Three person group project. Clients can post projects and invite developers to work with them, while developers can request to work on projects they are interested in.</p>
-<p>Responsible for ERD, development of client-developer interactions, deployment on Heroku.</p>
-<p><strong>Tools:</strong> Ruby, Rails, jQuery, Bootstrap, PostgreSQL, ActiveRecord, Heroku</p>
+<h3 ng-bind="data.name"></h3>
+<img src="img/{{data.id}}Home.png">
+<p ng-bind="data.description"></p>
+<p ng-bind="data.responsiblilities"></p>
+<p>
+  <strong>Tools:</strong> <span ng-bind="data.tools"></span>
+</p>
 <p>
   Want to see more? Check out the code on 
-  <a href="">GitHub</a>
-  <span ng-hide="WIP"> or try out the app for yourself 
-    <a href="">here</a>
+  <a href="{{data.codeLink}}">GitHub</a>
+  <span ng-hide="data.WIP"> or try out the app for yourself 
+    <a href="{{data.appLink}}">here</a>
   </span>.
 </p>
 
