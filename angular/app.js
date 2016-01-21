@@ -9,6 +9,9 @@ portfolio.config( function ($routeProvider) {
       templateUrl: '/partials/project.html',
       controller: 'projectsController'
     })
+    .when('/about', {
+      templateUrl: '/partials/about.html'
+    })
     .otherwise({
       redirectTo: '/'
     });
