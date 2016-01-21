@@ -12,9 +12,9 @@ var data = {
     codeLink: "https://github.com/monarajhans/Devinder",
     appLink: "https://devinder.herokuapp.com/"
   },
-  jimmyCo: {
-    id: "jimmyCo",
-    name: "Jimmy Co.",
+  enjCo: {
+    id: "enjCo",
+    name: "EnJ Co.",
     description: "E-commerce website with everything except the items in stock." +
       " Four person group project. Customer interface includes Ajax search on" +
       " the front page and functional credit-card payment using Stripe API. " + 

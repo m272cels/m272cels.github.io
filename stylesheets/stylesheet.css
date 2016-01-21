@@ -4,7 +4,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #606c71; }
@@ -12,8 +12,8 @@ body {
 a {
   color: #1e6bb8;
   text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+  /*a:hover {
+    text-decoration: underline; }*/
 
 .btn {
   display: inline-block;
