@@ -1,4 +1,4 @@
-var data = {
+var projects = {
   devFinders: {
     id: "devFinders",
     name: "DevFinders",
@@ -58,5 +58,15 @@ var data = {
 }
 
 portfolio.controller('projectsController', ['$scope', '$routeParams', function ($scope, $routeParams) {
-  $scope.data = data[$routeParams.id];
+  console.log("$routeParams == ", $routeParams);
+
+  if ($routeParams.id) {
+    $scope.data = projects[$routeParams.id];
+  }
+  else {
+    $scope.projects = projects;
+  }
+
+  console.log("$scope.data == ", $scope.data);
+  console.log("$scope.projects == ", $scope.projects);
 }])

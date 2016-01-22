@@ -4,6 +4,7 @@ portfolio.config( function ($routeProvider) {
   $routeProvider
     .when('/', {
       templateUrl: '/partials/main.html',
+      controller: 'projectsController'
     })
     .when('/projects/:id', {
       templateUrl: '/partials/project.html',

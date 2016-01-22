@@ -53,7 +53,7 @@ a {
       margin-top: 1rem;
       margin-left: 0; } }
 
-.page-header {
+/*.page-header {
   color: #fff;
   text-align: center;
   background-color: #159957;
@@ -102,7 +102,7 @@ a {
 
 @media screen and (max-width: 42em) {
   .project-tagline {
-    font-size: 1rem; } }
+    font-size: 1rem; } }*/
 
 .main-content :first-child {
   margin-top: 0; }
@@ -220,7 +220,7 @@ a {
     padding: 2rem 1rem;
     font-size: 1rem; } }
 
-.site-footer {
+/*.site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
   border-top: solid 1px #eff0f1; }
@@ -242,4 +242,4 @@ a {
 
 @media screen and (max-width: 42em) {
   .site-footer {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; } }*/

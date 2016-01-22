@@ -1,15 +1,17 @@
     <section class="main-content">
 
-<h3 id="projects" data-magellan-target="projects">Projects</h3>
-<ul>
-  <li>DevFinders</li>
-  <a href="#/projects/devFinders"><img src="img/devFindersHome.png" alt="DevFinders"></a>
-  <li>EnJ Co.</li>
-  <a href="#/projects/enjCo"><img src="img/enjCoHome.png" alt="EnJ Co."></a>
-  <li>Super Bowser</li>
-  <a href="#/projects/superBowser"><img src="img/superBowserHome.png" alt="Super Bowser"></a>
-  <li>Lettuce Eat</li>
-  <a href="#/projects/lettuceEat"><img src="img/lettuceEatHome.png" alt="Lettuce Eat"></a>
-</ul>
+<div class="row">
+  <div class="small-12 large-6 columns" ng-repeat="project in projects">
+    <a href="#/projects/{{project.id}}">
+      <img src="img/{{project.id}}Home.png" alt="{{project.name}}">
+    </a>  
+  </div> 
+</div>
+
+
+<!-- <a href="#/projects/devFinders"><img src="img/devFindersHome.png" alt="DevFinders"></a>
+<a href="#/projects/enjCo"><img src="img/enjCoHome.png" alt="EnJ Co."></a>
+<a href="#/projects/superBowser"><img src="img/superBowserHome.png" alt="Super Bowser"></a>
+<a href="#/projects/lettuceEat"><img src="img/lettuceEatHome.png" alt="Lettuce Eat"></a> -->
 
     </section>
