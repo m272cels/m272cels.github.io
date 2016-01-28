@@ -15,6 +15,14 @@ a {
   /*a:hover {
     text-decoration: underline; }*/
 
+.padded {
+  padding: 0.5em 0; }
+
+@media screen and (min-width: 64em) {
+  .padded {
+    padding: 0.5em; } }
+
+/*
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -51,7 +59,7 @@ a {
     font-size: 0.9rem; }
     .btn + .btn {
       margin-top: 1rem;
-      margin-left: 0; } }
+      margin-left: 0; } }*/
 
 /*.page-header {
   color: #fff;
