@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+.dist/
+
+# Astro
+.astro/
+
+# Environment variables
+.env
+.env.*.local
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local development
+.cache/
+.temp/
+
+# Optional npm cache directory
+.npm
