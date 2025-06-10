@@ -3,13 +3,15 @@
   /* Font Family */
   --font-sans: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
   
-  /* Colors */
+  /* Light Theme Colors (default) */
   --color-text: #111827;
   --color-text-muted: #4b5563;
   --color-primary: #4f46e5;
   --color-primary-hover: #4338ca;
   --color-background: #ffffff;
   --color-background-muted: #f9fafb;
+  --color-border: #e5e7eb;
+  --color-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   
   /* Spacing */
   --space-xs: 0.5rem;
@@ -31,6 +33,23 @@
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #f3f4f6;
+    --color-text-muted: #9ca3af;
+    --color-primary: #818cf8;
+    --color-primary-hover: #a5b4fc;
+    --color-background: #111827;
+    --color-background-muted: #1f2937;
+    --color-border: #374151;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px -1px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  }
+}
+
 /* Base Styles */
 html {
   font-family: var(--font-sans);
@@ -39,11 +58,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-text);
   background-color: var(--color-background);
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,7 +81,7 @@ h3 { font-size: 1.25rem; }
 
 p, i {
   margin: 0 0 1em;
-  color: var(--color-text-muted);
+  color: var(--color-text);
   line-height: 1.6;
 }
 
