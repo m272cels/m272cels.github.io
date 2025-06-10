@@ -57,7 +57,7 @@ h1 { font-size: 2.25rem; }
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.25rem; }
 
-p {
+p, i {
   margin: 0 0 1em;
   color: var(--color-text-muted);
   line-height: 1.6;
